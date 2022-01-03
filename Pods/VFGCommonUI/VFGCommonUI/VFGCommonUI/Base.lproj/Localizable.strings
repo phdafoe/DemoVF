@@ -1,0 +1,14 @@
+// AUTO GENERATED FILE - DO NOT EDIT
+"commonui_connection_error_alert_title" = "Problem occurred";
+"commonui_connection_error_alert_message" = "Check your Internet connection.";
+"commonui_connection_error_alert_ok_button" = "OK";
+"commonui_no_internet_connection_goto_setting_button" = "Check your phone settings";
+"commonui_loading_indicator_text" = "One moment please...";
+"commonui_connection_data_not_ready" = "Your data is not ready";
+"commonui_connection_data_not_loaded_message" = "Loading your data was not successful.\n\nRetry in a few minutes.";
+"commonui_connection_positive_button_text" = "Ok, got it.";
+"commonui_connection_offline_messsage" = "You're offline";
+"commonui_connection_you_are_back_online" = "You're back online";
+"commonui_last_updated" = "Last updated:";
+"commonui_just_now" = "Just now";
+"commonui_needhelp_bubble_text" = "Need\nhelp?";

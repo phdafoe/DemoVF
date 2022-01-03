@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4950EFF859B3DCF2EDE7C8D1 /* Pods_TestVodafone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7829C3FB1B2169F7AEC5A7BE /* Pods_TestVodafone.framework */; };
+		75ED5966273199EE00E5D43C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED5965273199EE00E5D43C /* AppDelegate.swift */; };
+		75ED5968273199EE00E5D43C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED5967273199EE00E5D43C /* SceneDelegate.swift */; };
+		75ED596F273199F000E5D43C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75ED596E273199F000E5D43C /* Assets.xcassets */; };
+		75ED5972273199F000E5D43C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75ED5970273199F000E5D43C /* LaunchScreen.storyboard */; };
+		75ED597C27319A1D00E5D43C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75ED597B27319A1D00E5D43C /* Main.storyboard */; };
+		75ED599027319A3C00E5D43C /* VFBottomPopup+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED597E27319A3C00E5D43C /* VFBottomPopup+Delegate.swift */; };
+		75ED599127319A3C00E5D43C /* MVA10BottomPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED597F27319A3C00E5D43C /* MVA10BottomPopupViewController.swift */; };
+		75ED599227319A3C00E5D43C /* MVA10BottomPopupDismissInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598027319A3C00E5D43C /* MVA10BottomPopupDismissInteractionController.swift */; };
+		75ED599327319A3C00E5D43C /* MVA10BottomPopupPresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598127319A3C00E5D43C /* MVA10BottomPopupPresentAnimator.swift */; };
+		75ED599427319A3C00E5D43C /* MVA10BottomPopupDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598227319A3C00E5D43C /* MVA10BottomPopupDismissAnimator.swift */; };
+		75ED599527319A3C00E5D43C /* UIButton+MVA10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598327319A3C00E5D43C /* UIButton+MVA10.swift */; };
+		75ED599627319A3C00E5D43C /* UserGuides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598527319A3C00E5D43C /* UserGuides.swift */; };
+		75ED599727319A3C00E5D43C /* UserGuidesNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598627319A3C00E5D43C /* UserGuidesNavigation.swift */; };
+		75ED599827319A3C00E5D43C /* UserGuidesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598727319A3C00E5D43C /* UserGuidesPage.swift */; };
+		75ED599927319A3C00E5D43C /* MVA10BottomPopupTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598827319A3C00E5D43C /* MVA10BottomPopupTransitionHandler.swift */; };
+		75ED599A27319A3C00E5D43C /* VFUserGuidesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598927319A3C00E5D43C /* VFUserGuidesViewController.swift */; };
+		75ED599B27319A3C00E5D43C /* VFFTEProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598A27319A3C00E5D43C /* VFFTEProtocol.swift */; };
+		75ED599C27319A3C00E5D43C /* MVA10BottomPopup+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598B27319A3C00E5D43C /* MVA10BottomPopup+Delegate.swift */; };
+		75ED599D27319A3C00E5D43C /* VFUserGuidesPageView+Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598D27319A3C00E5D43C /* VFUserGuidesPageView+Autolayout.swift */; };
+		75ED599E27319A3C00E5D43C /* VFUserGuidesPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598E27319A3C00E5D43C /* VFUserGuidesPageView.swift */; };
+		75ED599F27319A3C00E5D43C /* BottomPopupPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598F27319A3C00E5D43C /* BottomPopupPresentationController.swift */; };
+		75ED59A127319A4200E5D43C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED59A027319A4200E5D43C /* GradientView.swift */; };
+		75ED59A327319A4600E5D43C /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED59A227319A4600E5D43C /* String+Extensions.swift */; };
+		75ED59A527319A7D00E5D43C /* UIColor+VFGBackgrounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED59A427319A7D00E5D43C /* UIColor+VFGBackgrounds.swift */; };
+		75ED59A727319AB200E5D43C /* Bundle+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED59A627319AB200E5D43C /* Bundle+Init.swift */; };
+		75ED59A927319AD900E5D43C /* UIColor+VFGHyperlinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED59A827319AD900E5D43C /* UIColor+VFGHyperlinks.swift */; };
+		75ED59AB27319B5E00E5D43C /* UIFont+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED59AA27319B5E00E5D43C /* UIFont+Init.swift */; };
+		75ED59AD27319BCF00E5D43C /* VFGMVA10Foundation.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75ED59AC27319BCF00E5D43C /* VFGMVA10Foundation.xcassets */; };
+		75ED59AF27319BF500E5D43C /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED59AE27319BF500E5D43C /* UIView+Shadow.swift */; };
+		75ED59B127319C5200E5D43C /* NSMutableAttributedString+Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED59B027319C5200E5D43C /* NSMutableAttributedString+Attribute.swift */; };
+		75ED59B327319D1300E5D43C /* VFUserGuidesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75ED59B227319D1200E5D43C /* VFUserGuidesViewController.xib */; };
+		B4A63E872782EF2B00E31546 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A63E862782EF2B00E31546 /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1920CCF1C18EBC1267909940 /* Pods-TestVodafone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestVodafone.debug.xcconfig"; path = "Target Support Files/Pods-TestVodafone/Pods-TestVodafone.debug.xcconfig"; sourceTree = "<group>"; };
+		75ED5962273199EE00E5D43C /* TestVodafone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestVodafone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75ED5965273199EE00E5D43C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75ED5967273199EE00E5D43C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		75ED596E273199F000E5D43C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75ED5971273199F000E5D43C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		75ED5973273199F000E5D43C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75ED597B27319A1D00E5D43C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		75ED597E27319A3C00E5D43C /* VFBottomPopup+Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VFBottomPopup+Delegate.swift"; sourceTree = "<group>"; };
+		75ED597F27319A3C00E5D43C /* MVA10BottomPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVA10BottomPopupViewController.swift; sourceTree = "<group>"; };
+		75ED598027319A3C00E5D43C /* MVA10BottomPopupDismissInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVA10BottomPopupDismissInteractionController.swift; sourceTree = "<group>"; };
+		75ED598127319A3C00E5D43C /* MVA10BottomPopupPresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVA10BottomPopupPresentAnimator.swift; sourceTree = "<group>"; };
+		75ED598227319A3C00E5D43C /* MVA10BottomPopupDismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVA10BottomPopupDismissAnimator.swift; sourceTree = "<group>"; };
+		75ED598327319A3C00E5D43C /* UIButton+MVA10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+MVA10.swift"; sourceTree = "<group>"; };
+		75ED598527319A3C00E5D43C /* UserGuides.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserGuides.swift; sourceTree = "<group>"; };
+		75ED598627319A3C00E5D43C /* UserGuidesNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserGuidesNavigation.swift; sourceTree = "<group>"; };
+		75ED598727319A3C00E5D43C /* UserGuidesPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserGuidesPage.swift; sourceTree = "<group>"; };
+		75ED598827319A3C00E5D43C /* MVA10BottomPopupTransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVA10BottomPopupTransitionHandler.swift; sourceTree = "<group>"; };
+		75ED598927319A3C00E5D43C /* VFUserGuidesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VFUserGuidesViewController.swift; sourceTree = "<group>"; };
+		75ED598A27319A3C00E5D43C /* VFFTEProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VFFTEProtocol.swift; sourceTree = "<group>"; };
+		75ED598B27319A3C00E5D43C /* MVA10BottomPopup+Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MVA10BottomPopup+Delegate.swift"; sourceTree = "<group>"; };
+		75ED598D27319A3C00E5D43C /* VFUserGuidesPageView+Autolayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VFUserGuidesPageView+Autolayout.swift"; sourceTree = "<group>"; };
+		75ED598E27319A3C00E5D43C /* VFUserGuidesPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VFUserGuidesPageView.swift; sourceTree = "<group>"; };
+		75ED598F27319A3C00E5D43C /* BottomPopupPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomPopupPresentationController.swift; sourceTree = "<group>"; };
+		75ED59A027319A4200E5D43C /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		75ED59A227319A4600E5D43C /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		75ED59A427319A7D00E5D43C /* UIColor+VFGBackgrounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+VFGBackgrounds.swift"; sourceTree = "<group>"; };
+		75ED59A627319AB200E5D43C /* Bundle+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Init.swift"; sourceTree = "<group>"; };
+		75ED59A827319AD900E5D43C /* UIColor+VFGHyperlinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+VFGHyperlinks.swift"; sourceTree = "<group>"; };
+		75ED59AA27319B5E00E5D43C /* UIFont+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Init.swift"; sourceTree = "<group>"; };
+		75ED59AC27319BCF00E5D43C /* VFGMVA10Foundation.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = VFGMVA10Foundation.xcassets; sourceTree = "<group>"; };
+		75ED59AE27319BF500E5D43C /* UIView+Shadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
+		75ED59B027319C5200E5D43C /* NSMutableAttributedString+Attribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Attribute.swift"; sourceTree = "<group>"; };
+		75ED59B227319D1200E5D43C /* VFUserGuidesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VFUserGuidesViewController.xib; sourceTree = "<group>"; };
+		7829C3FB1B2169F7AEC5A7BE /* Pods_TestVodafone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestVodafone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4A63E862782EF2B00E31546 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B4A63E882783454800E31546 /* vodafone-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "vodafone-bold.ttf"; sourceTree = "<group>"; };
+		B4A63E892783454800E31546 /* Vodafone_Lt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Vodafone_Lt.ttf; sourceTree = "<group>"; };
+		B4A63E8A2783454800E31546 /* vodafone-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "vodafone-regular.ttf"; sourceTree = "<group>"; };
+		D3600FDE41A8A7C155B1BB8B /* Pods-TestVodafone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestVodafone.release.xcconfig"; path = "Target Support Files/Pods-TestVodafone/Pods-TestVodafone.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75ED595F273199EE00E5D43C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4950EFF859B3DCF2EDE7C8D1 /* Pods_TestVodafone.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57B57C6FBAF67077A19A0622 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1920CCF1C18EBC1267909940 /* Pods-TestVodafone.debug.xcconfig */,
+				D3600FDE41A8A7C155B1BB8B /* Pods-TestVodafone.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6B18CE0938F3B4646C5BD88E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7829C3FB1B2169F7AEC5A7BE /* Pods_TestVodafone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75ED5959273199EE00E5D43C = {
+			isa = PBXGroup;
+			children = (
+				75ED5964273199EE00E5D43C /* TestVodafone */,
+				75ED5963273199EE00E5D43C /* Products */,
+				57B57C6FBAF67077A19A0622 /* Pods */,
+				6B18CE0938F3B4646C5BD88E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		75ED5963273199EE00E5D43C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75ED5962273199EE00E5D43C /* TestVodafone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75ED5964273199EE00E5D43C /* TestVodafone */ = {
+			isa = PBXGroup;
+			children = (
+				B4A63E892783454800E31546 /* Vodafone_Lt.ttf */,
+				B4A63E882783454800E31546 /* vodafone-bold.ttf */,
+				B4A63E8A2783454800E31546 /* vodafone-regular.ttf */,
+				B4A63E862782EF2B00E31546 /* ViewController.swift */,
+				75ED59AC27319BCF00E5D43C /* VFGMVA10Foundation.xcassets */,
+				75ED59AE27319BF500E5D43C /* UIView+Shadow.swift */,
+				75ED59B027319C5200E5D43C /* NSMutableAttributedString+Attribute.swift */,
+				75ED59AA27319B5E00E5D43C /* UIFont+Init.swift */,
+				75ED59A827319AD900E5D43C /* UIColor+VFGHyperlinks.swift */,
+				75ED597D27319A3C00E5D43C /* VFGUserGuides */,
+				75ED5965273199EE00E5D43C /* AppDelegate.swift */,
+				75ED5967273199EE00E5D43C /* SceneDelegate.swift */,
+				75ED597B27319A1D00E5D43C /* Main.storyboard */,
+				75ED596E273199F000E5D43C /* Assets.xcassets */,
+				75ED5970273199F000E5D43C /* LaunchScreen.storyboard */,
+				75ED5973273199F000E5D43C /* Info.plist */,
+			);
+			path = TestVodafone;
+			sourceTree = "<group>";
+		};
+		75ED597D27319A3C00E5D43C /* VFGUserGuides */ = {
+			isa = PBXGroup;
+			children = (
+				75ED59B227319D1200E5D43C /* VFUserGuidesViewController.xib */,
+				75ED59A627319AB200E5D43C /* Bundle+Init.swift */,
+				75ED59A427319A7D00E5D43C /* UIColor+VFGBackgrounds.swift */,
+				75ED59A227319A4600E5D43C /* String+Extensions.swift */,
+				75ED59A027319A4200E5D43C /* GradientView.swift */,
+				75ED597E27319A3C00E5D43C /* VFBottomPopup+Delegate.swift */,
+				75ED597F27319A3C00E5D43C /* MVA10BottomPopupViewController.swift */,
+				75ED598027319A3C00E5D43C /* MVA10BottomPopupDismissInteractionController.swift */,
+				75ED598127319A3C00E5D43C /* MVA10BottomPopupPresentAnimator.swift */,
+				75ED598227319A3C00E5D43C /* MVA10BottomPopupDismissAnimator.swift */,
+				75ED598327319A3C00E5D43C /* UIButton+MVA10.swift */,
+				75ED598427319A3C00E5D43C /* Models */,
+				75ED598827319A3C00E5D43C /* MVA10BottomPopupTransitionHandler.swift */,
+				75ED598927319A3C00E5D43C /* VFUserGuidesViewController.swift */,
+				75ED598A27319A3C00E5D43C /* VFFTEProtocol.swift */,
+				75ED598B27319A3C00E5D43C /* MVA10BottomPopup+Delegate.swift */,
+				75ED598C27319A3C00E5D43C /* Pages */,
+				75ED598F27319A3C00E5D43C /* BottomPopupPresentationController.swift */,
+			);
+			path = VFGUserGuides;
+			sourceTree = "<group>";
+		};
+		75ED598427319A3C00E5D43C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				75ED598527319A3C00E5D43C /* UserGuides.swift */,
+				75ED598627319A3C00E5D43C /* UserGuidesNavigation.swift */,
+				75ED598727319A3C00E5D43C /* UserGuidesPage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		75ED598C27319A3C00E5D43C /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				75ED598D27319A3C00E5D43C /* VFUserGuidesPageView+Autolayout.swift */,
+				75ED598E27319A3C00E5D43C /* VFUserGuidesPageView.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75ED5961273199EE00E5D43C /* TestVodafone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75ED5976273199F000E5D43C /* Build configuration list for PBXNativeTarget "TestVodafone" */;
+			buildPhases = (
+				99C140631AF68160EDD75E75 /* [CP] Check Pods Manifest.lock */,
+				75ED595E273199EE00E5D43C /* Sources */,
+				75ED595F273199EE00E5D43C /* Frameworks */,
+				75ED5960273199EE00E5D43C /* Resources */,
+				7A50187A7A177CB0EC119F79 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestVodafone;
+			productName = TestVodafone;
+			productReference = 75ED5962273199EE00E5D43C /* TestVodafone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75ED595A273199EE00E5D43C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					75ED5961273199EE00E5D43C = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 75ED595D273199EE00E5D43C /* Build configuration list for PBXProject "TestVodafone" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75ED5959273199EE00E5D43C;
+			productRefGroup = 75ED5963273199EE00E5D43C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75ED5961273199EE00E5D43C /* TestVodafone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75ED5960273199EE00E5D43C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75ED597C27319A1D00E5D43C /* Main.storyboard in Resources */,
+				75ED5972273199F000E5D43C /* LaunchScreen.storyboard in Resources */,
+				75ED59AD27319BCF00E5D43C /* VFGMVA10Foundation.xcassets in Resources */,
+				75ED59B327319D1300E5D43C /* VFUserGuidesViewController.xib in Resources */,
+				75ED596F273199F000E5D43C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7A50187A7A177CB0EC119F79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestVodafone/Pods-TestVodafone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestVodafone/Pods-TestVodafone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestVodafone/Pods-TestVodafone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99C140631AF68160EDD75E75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestVodafone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75ED595E273199EE00E5D43C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75ED59A727319AB200E5D43C /* Bundle+Init.swift in Sources */,
+				75ED59AF27319BF500E5D43C /* UIView+Shadow.swift in Sources */,
+				75ED59A327319A4600E5D43C /* String+Extensions.swift in Sources */,
+				75ED5966273199EE00E5D43C /* AppDelegate.swift in Sources */,
+				75ED59A127319A4200E5D43C /* GradientView.swift in Sources */,
+				75ED599A27319A3C00E5D43C /* VFUserGuidesViewController.swift in Sources */,
+				75ED599527319A3C00E5D43C /* UIButton+MVA10.swift in Sources */,
+				75ED599327319A3C00E5D43C /* MVA10BottomPopupPresentAnimator.swift in Sources */,
+				75ED599127319A3C00E5D43C /* MVA10BottomPopupViewController.swift in Sources */,
+				75ED599227319A3C00E5D43C /* MVA10BottomPopupDismissInteractionController.swift in Sources */,
+				75ED599427319A3C00E5D43C /* MVA10BottomPopupDismissAnimator.swift in Sources */,
+				75ED599F27319A3C00E5D43C /* BottomPopupPresentationController.swift in Sources */,
+				75ED599B27319A3C00E5D43C /* VFFTEProtocol.swift in Sources */,
+				75ED599E27319A3C00E5D43C /* VFUserGuidesPageView.swift in Sources */,
+				75ED599027319A3C00E5D43C /* VFBottomPopup+Delegate.swift in Sources */,
+				75ED599827319A3C00E5D43C /* UserGuidesPage.swift in Sources */,
+				75ED59A527319A7D00E5D43C /* UIColor+VFGBackgrounds.swift in Sources */,
+				75ED599727319A3C00E5D43C /* UserGuidesNavigation.swift in Sources */,
+				75ED59A927319AD900E5D43C /* UIColor+VFGHyperlinks.swift in Sources */,
+				75ED599927319A3C00E5D43C /* MVA10BottomPopupTransitionHandler.swift in Sources */,
+				75ED599D27319A3C00E5D43C /* VFUserGuidesPageView+Autolayout.swift in Sources */,
+				B4A63E872782EF2B00E31546 /* ViewController.swift in Sources */,
+				75ED59AB27319B5E00E5D43C /* UIFont+Init.swift in Sources */,
+				75ED5968273199EE00E5D43C /* SceneDelegate.swift in Sources */,
+				75ED599C27319A3C00E5D43C /* MVA10BottomPopup+Delegate.swift in Sources */,
+				75ED59B127319C5200E5D43C /* NSMutableAttributedString+Attribute.swift in Sources */,
+				75ED599627319A3C00E5D43C /* UserGuides.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		75ED5970273199F000E5D43C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75ED5971273199F000E5D43C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75ED5974273199F000E5D43C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		75ED5975273199F000E5D43C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75ED5977273199F000E5D43C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1920CCF1C18EBC1267909940 /* Pods-TestVodafone.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2C7W4RF846;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestVodafone/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nttdatamobile.TestVodafone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75ED5978273199F000E5D43C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3600FDE41A8A7C155B1BB8B /* Pods-TestVodafone.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2C7W4RF846;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestVodafone/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nttdatamobile.TestVodafone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75ED595D273199EE00E5D43C /* Build configuration list for PBXProject "TestVodafone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75ED5974273199F000E5D43C /* Debug */,
+				75ED5975273199F000E5D43C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75ED5976273199F000E5D43C /* Build configuration list for PBXNativeTarget "TestVodafone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75ED5977273199F000E5D43C /* Debug */,
+				75ED5978273199F000E5D43C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75ED595A273199EE00E5D43C /* Project object */;
+}

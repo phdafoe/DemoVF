@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VFGSideMenuTableViewHeader" customModule="VFGCommonUI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="109"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EtG-0v-9sF" customClass="VFGSideMenuItemView" customModule="VFGCommonUI" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="109"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="EtG-0v-9sF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="D5A-2B-IZV"/>
+                <constraint firstItem="EtG-0v-9sF" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="FoV-oa-99v"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="EtG-0v-9sF" secondAttribute="trailing" id="ZYF-ay-6ga"/>
+                <constraint firstAttribute="bottom" secondItem="EtG-0v-9sF" secondAttribute="bottom" id="g7L-O6-48e"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="itemView" destination="EtG-0v-9sF" id="4Cx-Fl-XBg"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="-97.601199400299862"/>
+        </view>
+    </objects>
+</document>
