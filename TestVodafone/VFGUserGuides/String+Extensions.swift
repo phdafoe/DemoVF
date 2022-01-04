@@ -118,12 +118,12 @@ public extension String {
 
 
 enum FontSizeType: String {
-    case point
-    case pixel
+    case pt
+    case px
 }
 
 extension String {
-    func convertToHtml(fontSize: Float = 16, fontSizeType: FontSizeType = .pixel, fontName: String = "Vodafone Rg", color: UIColor? = nil, paragraphSpacing: CGFloat = 0, alignment: NSTextAlignment = NSTextAlignment.left ) -> NSMutableAttributedString? {
+    /*func convertToHtml(fontSize: Float = 16, fontSizeType: FontSizeType = .pixel, fontName: String = "Vodafone Rg", color: UIColor? = nil, paragraphSpacing: CGFloat = 0, alignment: NSTextAlignment = NSTextAlignment.left ) -> NSMutableAttributedString? {
         let siz = fontSize
         let raw = fontSizeType.rawValue
         let styleText = """
@@ -149,6 +149,31 @@ extension String {
                     attText.addAttributes(attributes as [NSAttributedString.Key: Any], range: range)
                 }
                 return attText
+            } catch _ as NSError {
+                print("Couldn't translate")
+            }
+        }
+        return NSMutableAttributedString()
+    }*/
+    func convertToHtml(fontSize: Int = 16 ,fontSizeType: FontSizeType = .px, fontName: String = "Vodafone Rg" ,color : UIColor? = nil , paragraphSpacing : CGFloat = 0, alignment: NSTextAlignment = NSTextAlignment.left ) -> NSMutableAttributedString?{
+        let styleText = "<html> <head> <style type='text/css'> body { font-family: '\(fontName)'; font-size: \(fontSize)\(fontSizeType.rawValue);} p { line-height: 5.1 }</style></head> <body>"
+        let html = styleText + self
+        if let htmlData = html.data(using: String.Encoding.unicode) {
+            do {
+                let attributedText = try NSMutableAttributedString(data: htmlData, options: [NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil)
+                
+                let paragraphStyle = NSMutableParagraphStyle()
+                paragraphStyle.paragraphSpacing = paragraphSpacing
+                paragraphStyle.alignment = alignment
+                
+                if color == nil {
+                    attributedText.addAttributes([NSAttributedString.Key.paragraphStyle: paragraphStyle], range: NSMakeRange(0, attributedText.length))
+                }
+                else {
+                    attributedText.addAttributes([NSAttributedString.Key.paragraphStyle: paragraphStyle , NSAttributedString.Key.foregroundColor : color!], range: NSMakeRange(0, attributedText.length))
+                }
+                
+                return attributedText
             } catch _ as NSError {
                 print("Couldn't translate")
             }

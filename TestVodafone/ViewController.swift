@@ -16,8 +16,6 @@ class ViewController: UIViewController {
         guard let userGuidesUnw = self.userGuides else { return }
         self.vc = VFUserGuidesViewController(userGuides: userGuidesUnw)
         vc.delegate = self
-        vc.modalTransitionStyle = .coverVertical
-        vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
     }
     
@@ -26,9 +24,9 @@ class ViewController: UIViewController {
         self.userGuides = UserGuides(initialPage: "0",
                                      pages: ["0" : UserGuidesPage(pageId: "0",
                                                                   title: "!Nueva sección de averias¡",
-                                                                  subtitle: "Desde ahora podrás geswtionar tus incidencias de manera más fácil, rápida y efectiva",
+                                                                  subtitle: "Desde ahora podrás gestionar tus incidencias de manera más fácil, rápida y efectiva",
                                                                   imageURL: URL(string: "https://assets-es.dxl.local.vodafone.es/mves/sites/vspain/image/3000005000578/averias_banner_desktop.jpg")!,
-                                                                  details: "Resuelve tu avería de maneta sencilla desde la app",
+                                                                  details: "Resuelve tu avería de manera sencilla desde la app, desde ahora podrás gestionar tus incidencias de manera más fácil, rápida y efectiva",
                                                                   navigation: UserGuidesNavigation(title: "siguiente",
                                                                                                    identifier: "1",
                                                                                                    type: .userguides)),
@@ -36,7 +34,7 @@ class ViewController: UIViewController {
                                                                   title: "Por ser de Vodafone",
                                                                   subtitle: "!Últimos días de ofertas¡\n regala a precios increíbles y págalos a plazos",
                                                                   imageURL: URL(string: "https://assets-es.dxl.local.vodafone.es/mves/sites/vspain/image/1500159648093/epcanje_mob.jpg")!,
-                                                                  details: "Listado de dispositivos, Línea asociada",
+                                                                  details: "Listado de dispositivos, Línea asociada, últimos días de ofertas¡\n regala a precios increíbles y págalos a plazos",
                                                                   navigation: UserGuidesNavigation(title: "siguiente",
                                                                                                    identifier: "2",
                                                                                                    type: .userguides)),
@@ -44,7 +42,7 @@ class ViewController: UIViewController {
                                                                   title: "!Ya dispones de la mejor oferta¡",
                                                                   subtitle: "Si quieres seguir conociendo las últimas novedades, no te pierdas nuestras notificaciones",
                                                                   imageURL: URL(string: "https://assets-es.dxl.local.vodafone.es/mves/sites/vspain/image/1500152720304/ep_segline_mob.jpg")!,
-                                                                  details: "!Ofertón¡ Línea ilimitada por 12,50€ mes y añade cascos de OPPO por 2€/mes más",
+                                                                  details: "!Ofertón¡ Línea ilimitada por 12,50€ mes y añade cascos de OPPO por 2€/mes más, Si quieres seguir conociendo las últimas novedades, no te pierdas nuestras notificaciones",
                                                                   navigation: UserGuidesNavigation(title: "cerrar",
                                                                                                    identifier: "0",
                                                                                                    type: .app))])
