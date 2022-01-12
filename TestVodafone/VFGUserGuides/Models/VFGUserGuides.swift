@@ -8,10 +8,10 @@
 
 import Foundation
 
-public struct UserGuides: Equatable {
+public struct VFGUserGuides: Equatable {
     var identifier: String?
     let initialPage: String
-    let pages: [String: UserGuidesPage]
+    let pages: [String: VFGUserGuidesPage]
 
     enum CodingKeys: String, CodingKey {
         case identifier
@@ -19,12 +19,12 @@ public struct UserGuides: Equatable {
         case pages
     }
 
-    public init(initialPage: String, pages: [String: UserGuidesPage]) {
+    public init(initialPage: String, pages: [String: VFGUserGuidesPage]) {
         self.initialPage = initialPage
         self.pages = pages
     }
 
-    public static func == (lhs: UserGuides, rhs: UserGuides) -> Bool {
+    public static func == (lhs: VFGUserGuides, rhs: VFGUserGuides) -> Bool {
         return lhs.identifier == rhs.identifier && lhs.initialPage == rhs.initialPage
     }
 }

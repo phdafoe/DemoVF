@@ -17,9 +17,9 @@ class VFUserGuidesPageView: UIScrollView {
     var imageView: UIImageView
     var descriptionLabel: UILabel
     var imageHeightConstraint: NSLayoutConstraint?
-    unowned let page: UserGuidesPage
+    unowned let page: VFGUserGuidesPage
 
-    init(frame: CGRect, page: UserGuidesPage) {
+    init(frame: CGRect, page: VFGUserGuidesPage) {
         self.page = page
         self.containerView = UIView()
         self.titleLabel = UILabel()

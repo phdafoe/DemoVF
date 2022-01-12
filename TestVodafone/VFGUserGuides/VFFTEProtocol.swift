@@ -1,5 +1,5 @@
 //
-//  VFUserGuidesProtocol.swift
+//  VFGUserGuidesProtocol.swift
 //  EverisVodafoneFoundation
 //
 //  Created by Everis on 16/9/21.
@@ -7,9 +7,9 @@
 
 import Foundation
 
-public protocol VFUserGuidesProtocol: class {
-    func viewIsReady(userGuides: UserGuides)
-    func viewWillClose(userGuides: UserGuides, page: UserGuidesPage)
-    func sectionActionRequested(userGuides: UserGuides, page: UserGuidesPage)
-    func nextActionRequested(userGuides: UserGuides, page: UserGuidesPage)
+public protocol VFGUserGuidesProtocol: class {
+    func viewIsReady(userGuides: VFGUserGuides)
+    func viewWillClose(userGuides: VFGUserGuides, page: VFGUserGuidesPage)
+    func sectionActionRequested(userGuides: VFGUserGuides, page: VFGUserGuidesPage)
+    func nextActionRequested(userGuides: VFGUserGuides, page: VFGUserGuidesPage)
 }

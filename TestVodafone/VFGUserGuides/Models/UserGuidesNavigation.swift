@@ -8,7 +8,7 @@
 
 import Foundation
 
-public final class UserGuidesNavigation: Equatable {
+public final class VFGUserGuidesNavigation: Equatable {
     public enum Kind: String {
         case userguides
         case app
@@ -29,27 +29,12 @@ public final class UserGuidesNavigation: Equatable {
         self.type = type
     }
 
-    public static func == (lhs: UserGuidesNavigation, rhs: UserGuidesNavigation) -> Bool {
+    public static func == (lhs: VFGUserGuidesNavigation, rhs: VFGUserGuidesNavigation) -> Bool {
         return lhs.navigationId == rhs.navigationId && lhs.navigationTitle == rhs.navigationTitle
     }
-//    required convenience public init?(json: JSON) {
-//        guard let title: String = DecodingKeys.title.rawValue <~~ json else { return nil }
-//        guard let identifier: String = "navigation_id" <~~ json else { return nil }
-//        guard let typeStr: String = DecodingKeys.type.rawValue <~~ json else { return nil }
-//        guard let type = Kind(rawValue: typeStr.lowercased()) else { return nil }
-//        self.init(title: title, identifier: identifier, type: type)
-//    }
-//
-//    public func toJSON() -> JSON? {
-//        return jsonify([
-//            DecodingKeys.type.rawValue ~~> type.rawValue,
-//            DecodingKeys.title.rawValue ~~> navigationTitle,
-//            "navigation_id" ~~> navigationId
-//        ])
-//    }
 }
 
-extension UserGuidesNavigation.Kind {
+extension VFGUserGuidesNavigation.Kind {
     public var buttonStyle: MVA10ButtonStyle {
         switch self {
         case .app:

@@ -19,11 +19,11 @@
 		75ED599327319A3C00E5D43C /* MVA10BottomPopupPresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598127319A3C00E5D43C /* MVA10BottomPopupPresentAnimator.swift */; };
 		75ED599427319A3C00E5D43C /* MVA10BottomPopupDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598227319A3C00E5D43C /* MVA10BottomPopupDismissAnimator.swift */; };
 		75ED599527319A3C00E5D43C /* UIButton+MVA10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598327319A3C00E5D43C /* UIButton+MVA10.swift */; };
-		75ED599627319A3C00E5D43C /* UserGuides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598527319A3C00E5D43C /* UserGuides.swift */; };
+		75ED599627319A3C00E5D43C /* VFGUserGuides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598527319A3C00E5D43C /* VFGUserGuides.swift */; };
 		75ED599727319A3C00E5D43C /* UserGuidesNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598627319A3C00E5D43C /* UserGuidesNavigation.swift */; };
-		75ED599827319A3C00E5D43C /* UserGuidesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598727319A3C00E5D43C /* UserGuidesPage.swift */; };
+		75ED599827319A3C00E5D43C /* VFGUserGuidesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598727319A3C00E5D43C /* VFGUserGuidesPage.swift */; };
 		75ED599927319A3C00E5D43C /* MVA10BottomPopupTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598827319A3C00E5D43C /* MVA10BottomPopupTransitionHandler.swift */; };
-		75ED599A27319A3C00E5D43C /* VFUserGuidesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598927319A3C00E5D43C /* VFUserGuidesViewController.swift */; };
+		75ED599A27319A3C00E5D43C /* VFGUserGuidesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598927319A3C00E5D43C /* VFGUserGuidesViewController.swift */; };
 		75ED599B27319A3C00E5D43C /* VFFTEProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598A27319A3C00E5D43C /* VFFTEProtocol.swift */; };
 		75ED599C27319A3C00E5D43C /* MVA10BottomPopup+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598B27319A3C00E5D43C /* MVA10BottomPopup+Delegate.swift */; };
 		75ED599D27319A3C00E5D43C /* VFUserGuidesPageView+Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598D27319A3C00E5D43C /* VFUserGuidesPageView+Autolayout.swift */; };
@@ -38,7 +38,7 @@
 		75ED59AD27319BCF00E5D43C /* VFGMVA10Foundation.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75ED59AC27319BCF00E5D43C /* VFGMVA10Foundation.xcassets */; };
 		75ED59AF27319BF500E5D43C /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED59AE27319BF500E5D43C /* UIView+Shadow.swift */; };
 		75ED59B127319C5200E5D43C /* NSMutableAttributedString+Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED59B027319C5200E5D43C /* NSMutableAttributedString+Attribute.swift */; };
-		75ED59B327319D1300E5D43C /* VFUserGuidesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75ED59B227319D1200E5D43C /* VFUserGuidesViewController.xib */; };
+		75ED59B327319D1300E5D43C /* VFGUserGuidesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75ED59B227319D1200E5D43C /* VFGUserGuidesViewController.xib */; };
 		B4A63E872782EF2B00E31546 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A63E862782EF2B00E31546 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,11 +57,11 @@
 		75ED598127319A3C00E5D43C /* MVA10BottomPopupPresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVA10BottomPopupPresentAnimator.swift; sourceTree = "<group>"; };
 		75ED598227319A3C00E5D43C /* MVA10BottomPopupDismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVA10BottomPopupDismissAnimator.swift; sourceTree = "<group>"; };
 		75ED598327319A3C00E5D43C /* UIButton+MVA10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+MVA10.swift"; sourceTree = "<group>"; };
-		75ED598527319A3C00E5D43C /* UserGuides.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserGuides.swift; sourceTree = "<group>"; };
+		75ED598527319A3C00E5D43C /* VFGUserGuides.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VFGUserGuides.swift; sourceTree = "<group>"; };
 		75ED598627319A3C00E5D43C /* UserGuidesNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserGuidesNavigation.swift; sourceTree = "<group>"; };
-		75ED598727319A3C00E5D43C /* UserGuidesPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserGuidesPage.swift; sourceTree = "<group>"; };
+		75ED598727319A3C00E5D43C /* VFGUserGuidesPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VFGUserGuidesPage.swift; sourceTree = "<group>"; };
 		75ED598827319A3C00E5D43C /* MVA10BottomPopupTransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVA10BottomPopupTransitionHandler.swift; sourceTree = "<group>"; };
-		75ED598927319A3C00E5D43C /* VFUserGuidesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VFUserGuidesViewController.swift; sourceTree = "<group>"; };
+		75ED598927319A3C00E5D43C /* VFGUserGuidesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VFGUserGuidesViewController.swift; sourceTree = "<group>"; };
 		75ED598A27319A3C00E5D43C /* VFFTEProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VFFTEProtocol.swift; sourceTree = "<group>"; };
 		75ED598B27319A3C00E5D43C /* MVA10BottomPopup+Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MVA10BottomPopup+Delegate.swift"; sourceTree = "<group>"; };
 		75ED598D27319A3C00E5D43C /* VFUserGuidesPageView+Autolayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VFUserGuidesPageView+Autolayout.swift"; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		75ED59AC27319BCF00E5D43C /* VFGMVA10Foundation.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = VFGMVA10Foundation.xcassets; sourceTree = "<group>"; };
 		75ED59AE27319BF500E5D43C /* UIView+Shadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
 		75ED59B027319C5200E5D43C /* NSMutableAttributedString+Attribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Attribute.swift"; sourceTree = "<group>"; };
-		75ED59B227319D1200E5D43C /* VFUserGuidesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VFUserGuidesViewController.xib; sourceTree = "<group>"; };
+		75ED59B227319D1200E5D43C /* VFGUserGuidesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VFGUserGuidesViewController.xib; sourceTree = "<group>"; };
 		7829C3FB1B2169F7AEC5A7BE /* Pods_TestVodafone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestVodafone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A63E862782EF2B00E31546 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B4A63E882783454800E31546 /* vodafone-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "vodafone-bold.ttf"; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 		75ED597D27319A3C00E5D43C /* VFGUserGuides */ = {
 			isa = PBXGroup;
 			children = (
-				75ED59B227319D1200E5D43C /* VFUserGuidesViewController.xib */,
+				75ED59B227319D1200E5D43C /* VFGUserGuidesViewController.xib */,
 				75ED59A627319AB200E5D43C /* Bundle+Init.swift */,
 				75ED59A427319A7D00E5D43C /* UIColor+VFGBackgrounds.swift */,
 				75ED59A227319A4600E5D43C /* String+Extensions.swift */,
@@ -171,7 +171,7 @@
 				75ED598327319A3C00E5D43C /* UIButton+MVA10.swift */,
 				75ED598427319A3C00E5D43C /* Models */,
 				75ED598827319A3C00E5D43C /* MVA10BottomPopupTransitionHandler.swift */,
-				75ED598927319A3C00E5D43C /* VFUserGuidesViewController.swift */,
+				75ED598927319A3C00E5D43C /* VFGUserGuidesViewController.swift */,
 				75ED598A27319A3C00E5D43C /* VFFTEProtocol.swift */,
 				75ED598B27319A3C00E5D43C /* MVA10BottomPopup+Delegate.swift */,
 				75ED598C27319A3C00E5D43C /* Pages */,
@@ -183,9 +183,9 @@
 		75ED598427319A3C00E5D43C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				75ED598527319A3C00E5D43C /* UserGuides.swift */,
+				75ED598527319A3C00E5D43C /* VFGUserGuides.swift */,
 				75ED598627319A3C00E5D43C /* UserGuidesNavigation.swift */,
-				75ED598727319A3C00E5D43C /* UserGuidesPage.swift */,
+				75ED598727319A3C00E5D43C /* VFGUserGuidesPage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -262,7 +262,7 @@
 				75ED597C27319A1D00E5D43C /* Main.storyboard in Resources */,
 				75ED5972273199F000E5D43C /* LaunchScreen.storyboard in Resources */,
 				75ED59AD27319BCF00E5D43C /* VFGMVA10Foundation.xcassets in Resources */,
-				75ED59B327319D1300E5D43C /* VFUserGuidesViewController.xib in Resources */,
+				75ED59B327319D1300E5D43C /* VFGUserGuidesViewController.xib in Resources */,
 				75ED596F273199F000E5D43C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,7 +321,7 @@
 				75ED59A327319A4600E5D43C /* String+Extensions.swift in Sources */,
 				75ED5966273199EE00E5D43C /* AppDelegate.swift in Sources */,
 				75ED59A127319A4200E5D43C /* GradientView.swift in Sources */,
-				75ED599A27319A3C00E5D43C /* VFUserGuidesViewController.swift in Sources */,
+				75ED599A27319A3C00E5D43C /* VFGUserGuidesViewController.swift in Sources */,
 				75ED599527319A3C00E5D43C /* UIButton+MVA10.swift in Sources */,
 				75ED599327319A3C00E5D43C /* MVA10BottomPopupPresentAnimator.swift in Sources */,
 				75ED599127319A3C00E5D43C /* MVA10BottomPopupViewController.swift in Sources */,
@@ -331,7 +331,7 @@
 				75ED599B27319A3C00E5D43C /* VFFTEProtocol.swift in Sources */,
 				75ED599E27319A3C00E5D43C /* VFUserGuidesPageView.swift in Sources */,
 				75ED599027319A3C00E5D43C /* VFBottomPopup+Delegate.swift in Sources */,
-				75ED599827319A3C00E5D43C /* UserGuidesPage.swift in Sources */,
+				75ED599827319A3C00E5D43C /* VFGUserGuidesPage.swift in Sources */,
 				75ED59A527319A7D00E5D43C /* UIColor+VFGBackgrounds.swift in Sources */,
 				75ED599727319A3C00E5D43C /* UserGuidesNavigation.swift in Sources */,
 				75ED59A927319AD900E5D43C /* UIColor+VFGHyperlinks.swift in Sources */,
@@ -342,7 +342,7 @@
 				75ED5968273199EE00E5D43C /* SceneDelegate.swift in Sources */,
 				75ED599C27319A3C00E5D43C /* MVA10BottomPopup+Delegate.swift in Sources */,
 				75ED59B127319C5200E5D43C /* NSMutableAttributedString+Attribute.swift in Sources */,
-				75ED599627319A3C00E5D43C /* UserGuides.swift in Sources */,
+				75ED599627319A3C00E5D43C /* VFGUserGuides.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

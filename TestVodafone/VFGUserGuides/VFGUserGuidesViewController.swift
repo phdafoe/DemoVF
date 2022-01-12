@@ -1,5 +1,5 @@
 //
-//  VFUserGuidesViewController.swift
+//  VFGUserGuidesViewController.swift
 //  VFGMVA10Foundation
 //
 //  Created by Yago de Martín on 23/07/2019.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-public class VFUserGuidesViewController: MVA10BottomPopupViewController {
-    private let userGuides: UserGuides
+public class VFGUserGuidesViewController: MVA10BottomPopupViewController {
+    private let userGuides: VFGUserGuides
     private var currentPageId: String?
     // MARK: - IBOutlets
     @IBOutlet weak var containerView: UIView!
@@ -57,17 +57,17 @@ public class VFUserGuidesViewController: MVA10BottomPopupViewController {
     private var leftConstraint: NSLayoutConstraint?
     // MARK: - UIElements
     private var currentPage: VFUserGuidesPageView?
-    public weak var delegate: VFUserGuidesProtocol?
-    var initialPage: UserGuidesPage? {
+    public weak var delegate: VFGUserGuidesProtocol?
+    var initialPage: VFGUserGuidesPage? {
         let page = userGuides.pages[userGuides.initialPage]
         currentPageId = page?.pageId
         return page
     }
 
     // MARK: - Initializers
-    public init(userGuides: UserGuides) {
+    public init(userGuides: VFGUserGuides) {
         self.userGuides = userGuides
-        super.init(nibName: "VFUserGuidesViewController", bundle: Bundle.init(for: VFUserGuidesViewController.self))
+        super.init(nibName: "VFGUserGuidesViewController", bundle: Bundle.init(for: VFGUserGuidesViewController.self))
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -182,7 +182,7 @@ public class VFUserGuidesViewController: MVA10BottomPopupViewController {
             self.display(page: nextPage)
         }
     }
-    func display(page: UserGuidesPage) {
+    func display(page: VFGUserGuidesPage) {
         applyButtonStyle(for: page)
         replacePage(page)
     }
@@ -191,13 +191,13 @@ public class VFUserGuidesViewController: MVA10BottomPopupViewController {
         self.dismiss(animated: true, completion: completion)
     }
 
-    private func applyButtonStyle(for page: UserGuidesPage) {
+    private func applyButtonStyle(for page: VFGUserGuidesPage) {
         let navigation = page.navigation
         nextCTA.setTitle(navigation.navigationTitle, for: .normal)
         UIButton.apply(to: nextCTA, mva10Style: navigation.type.buttonStyle)
     }
 
-    private func replacePage(_ page: UserGuidesPage) {
+    private func replacePage(_ page: VFGUserGuidesPage) {
         let newPage = addPageView(with: page)
         if currentPage != nil {
             let anchor = userGuidesContainer.leadingAnchor
@@ -222,7 +222,7 @@ public class VFUserGuidesViewController: MVA10BottomPopupViewController {
         }
     }
 
-    private func addPageView(with page: UserGuidesPage) -> VFUserGuidesPageView {
+    private func addPageView(with page: VFGUserGuidesPage) -> VFUserGuidesPageView {
         let pageView = VFUserGuidesPageView(frame: userGuidesContainer.bounds, page: page)
         pageView.translatesAutoresizingMaskIntoConstraints = false
         userGuidesContainer.addSubview(pageView)
