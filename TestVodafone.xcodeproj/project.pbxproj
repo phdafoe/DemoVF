@@ -20,7 +20,7 @@
 		75ED599427319A3C00E5D43C /* MVA10BottomPopupDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598227319A3C00E5D43C /* MVA10BottomPopupDismissAnimator.swift */; };
 		75ED599527319A3C00E5D43C /* UIButton+MVA10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598327319A3C00E5D43C /* UIButton+MVA10.swift */; };
 		75ED599627319A3C00E5D43C /* VFGUserGuides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598527319A3C00E5D43C /* VFGUserGuides.swift */; };
-		75ED599727319A3C00E5D43C /* UserGuidesNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598627319A3C00E5D43C /* UserGuidesNavigation.swift */; };
+		75ED599727319A3C00E5D43C /* VFGUserGuidesNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598627319A3C00E5D43C /* VFGUserGuidesNavigation.swift */; };
 		75ED599827319A3C00E5D43C /* VFGUserGuidesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598727319A3C00E5D43C /* VFGUserGuidesPage.swift */; };
 		75ED599927319A3C00E5D43C /* MVA10BottomPopupTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598827319A3C00E5D43C /* MVA10BottomPopupTransitionHandler.swift */; };
 		75ED599A27319A3C00E5D43C /* VFGUserGuidesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED598927319A3C00E5D43C /* VFGUserGuidesViewController.swift */; };
@@ -58,7 +58,7 @@
 		75ED598227319A3C00E5D43C /* MVA10BottomPopupDismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVA10BottomPopupDismissAnimator.swift; sourceTree = "<group>"; };
 		75ED598327319A3C00E5D43C /* UIButton+MVA10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+MVA10.swift"; sourceTree = "<group>"; };
 		75ED598527319A3C00E5D43C /* VFGUserGuides.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VFGUserGuides.swift; sourceTree = "<group>"; };
-		75ED598627319A3C00E5D43C /* UserGuidesNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserGuidesNavigation.swift; sourceTree = "<group>"; };
+		75ED598627319A3C00E5D43C /* VFGUserGuidesNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VFGUserGuidesNavigation.swift; sourceTree = "<group>"; };
 		75ED598727319A3C00E5D43C /* VFGUserGuidesPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VFGUserGuidesPage.swift; sourceTree = "<group>"; };
 		75ED598827319A3C00E5D43C /* MVA10BottomPopupTransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVA10BottomPopupTransitionHandler.swift; sourceTree = "<group>"; };
 		75ED598927319A3C00E5D43C /* VFGUserGuidesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VFGUserGuidesViewController.swift; sourceTree = "<group>"; };
@@ -184,7 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				75ED598527319A3C00E5D43C /* VFGUserGuides.swift */,
-				75ED598627319A3C00E5D43C /* UserGuidesNavigation.swift */,
+				75ED598627319A3C00E5D43C /* VFGUserGuidesNavigation.swift */,
 				75ED598727319A3C00E5D43C /* VFGUserGuidesPage.swift */,
 			);
 			path = Models;
@@ -333,7 +333,7 @@
 				75ED599027319A3C00E5D43C /* VFBottomPopup+Delegate.swift in Sources */,
 				75ED599827319A3C00E5D43C /* VFGUserGuidesPage.swift in Sources */,
 				75ED59A527319A7D00E5D43C /* UIColor+VFGBackgrounds.swift in Sources */,
-				75ED599727319A3C00E5D43C /* UserGuidesNavigation.swift in Sources */,
+				75ED599727319A3C00E5D43C /* VFGUserGuidesNavigation.swift in Sources */,
 				75ED59A927319AD900E5D43C /* UIColor+VFGHyperlinks.swift in Sources */,
 				75ED599927319A3C00E5D43C /* MVA10BottomPopupTransitionHandler.swift in Sources */,
 				75ED599D27319A3C00E5D43C /* VFUserGuidesPageView+Autolayout.swift in Sources */,
